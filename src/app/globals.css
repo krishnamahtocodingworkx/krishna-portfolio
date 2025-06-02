@@ -5,21 +5,41 @@
   --color-black-100: #000319;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-pink: #cbacf9;
+  --color-purple: #8f87f1;
+  --color-purple-500: #7a73d1;
 }
 :root {
   --white: #ffffff;
   --black: #000000;
   --black-100: #000319;
+  --pink: #cbacf9;
+  --purple: #8f87f1;
+  --purple-500: #7a73d1;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: var(--black-100); */
   /* color: var(--white); */
 }
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+} */
+@theme inline {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
 }
