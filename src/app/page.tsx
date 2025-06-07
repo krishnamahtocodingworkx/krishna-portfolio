@@ -1,8 +1,10 @@
 import Hero from "@/components/hero/Hero";
-import Grid from "@/components/ui/Grid";
 import FloatingNav from "@/components/ui/Navbar";
-// import { navItems } from "@/lib/constant";
+import { LiaSmsSolid } from "react-icons/lia";
 import { FaHome } from "react-icons/fa";
+import { AiOutlineProduct } from "react-icons/ai";
+import RecentProjects from "@/components/recentProjects";
+// import Grid from "@/components/grid";
 
 export default function Home() {
   return (
@@ -11,14 +13,15 @@ export default function Home() {
         <FloatingNav
           navItems={[
             { name: "Home", link: "/", icon: <FaHome /> },
-            { name: "Home", link: "/", icon: <FaHome /> },
-            { name: "Home", link: "/", icon: <FaHome /> },
+            { name: "About", link: "/about", icon: <LiaSmsSolid /> },
+            { name: "Projects", link: "/projects", icon: <AiOutlineProduct /> },
           ]}
         />
         <Hero />
-        <Grid />
-        {/* 
+        {/* <Grid /> */}
         <RecentProjects />
+        {/* 
+        
         <Clients />
         <Experience />
         <Approach />
