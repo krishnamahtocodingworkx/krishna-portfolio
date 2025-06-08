@@ -24,13 +24,14 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <h2 className="uppercase tracking-widest text-xs text-center text-white max-w-80">
             Crafting Scalable Web Solutions with the MERN Stack
           </h2>
           <TextGenerateEffect
             words="Building Modern, Intuitive & High-Performance Applications"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             filter={true}
+            indexesToHighlight={[2, 3, 4, 5]}
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
             Hii, I&apos;m Krishna — a passionate Software Developer specializing

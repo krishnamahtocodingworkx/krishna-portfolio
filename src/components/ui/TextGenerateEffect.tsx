@@ -8,11 +8,13 @@ const TextGenerateEffect = ({
   className,
   filter = false,
   duration = 0.5,
+  indexesToHighlight,
 }: {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
+  indexesToHighlight: number[];
 }) => {
   const [scope, animate] = useAnimate();
   const wordsArray = words.split(" ");
@@ -38,7 +40,9 @@ const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={` opacity-0 ${
-                idx > 3 ? "text-pink" : "dark:text-white text-black"
+                indexesToHighlight.includes(idx)
+                  ? "text-pink"
+                  : "dark:text-white text-black"
               }`}
               style={{
                 filter: filter ? "blur(10px)" : "none",

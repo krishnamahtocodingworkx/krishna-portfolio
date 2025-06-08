@@ -1,13 +1,20 @@
 @import "tailwindcss";
 
 /* --black: #171717; */
+/* --color-black-100: #000319; */
 @theme inline {
-  --color-black-100: #000319;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-pink: #cbacf9;
   --color-purple: #8f87f1;
   --color-purple-500: #7a73d1;
+
+  --color-white-50: #d9ecff;
+  --color-black-50: #1c1c21;
+  --color-black-100: #0e0e10;
+  --color-black-200: #282732;
+  --color-blue-50: #839cb5;
+  --color-blue-100: #2d2d38;
 }
 :root {
   --white: #ffffff;
@@ -58,6 +65,6 @@ body {
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-4xl md:text-5xl text-center text-white;
   }
 }
