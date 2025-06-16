@@ -265,3 +265,5 @@ export const expCards = [
     ],
   },
 ];
+
+export const desktopImage = "/images/desktop-image.jpg";
