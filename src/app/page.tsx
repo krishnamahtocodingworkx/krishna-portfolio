@@ -6,6 +6,7 @@ import { AiOutlineProduct } from "react-icons/ai";
 import RecentProjects from "@/components/recentProjects";
 import Journey from "@/components/journey";
 import GetInTouch from "@/components/getInTouch";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Journey />
       </div>
       <GetInTouch />
+      <Footer />
     </main>
   );
 }
