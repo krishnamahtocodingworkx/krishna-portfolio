@@ -1,3 +1,4 @@
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -214,6 +215,10 @@ export const socialMedia = [
     id: 3,
     img: "/link.svg",
   },
+  {
+    id:4, 
+    img: "/insta.svg",
+  }
 ];
 export type expCardsTypes = {
   review: string;
